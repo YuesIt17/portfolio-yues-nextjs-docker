@@ -1,0 +1,13 @@
+.history
+.vscode
+.storybook
+.husky
+node_modules
+build
+build-storybook.log
+.next
+yarn-error.log
+coverage
+# stryker temp files
+.stryker-tmp
+stryker.log

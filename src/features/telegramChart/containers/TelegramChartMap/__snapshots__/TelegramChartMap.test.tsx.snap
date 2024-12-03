@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TelegramChartMap test Check render TelegramChartMap component 1`] = `
+<div
+  className="css-rue32s-chartMap"
+  data-testid="telegramChartMap"
+>
+  <svg
+    style={
+      Object {
+        "width": undefined,
+      }
+    }
+    viewBox="0 0 10 2"
+  >
+    <polyline
+      className="css-bqwtyj-line"
+      points="1,0 6,3"
+    />
+  </svg>
+</div>
+`;

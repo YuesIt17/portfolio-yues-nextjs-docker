@@ -1,0 +1,1 @@
+export {prepareData} from './prepareData';

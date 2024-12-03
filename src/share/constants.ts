@@ -1,0 +1,2 @@
+export const COLOR_CHART_LINE_JOINED = '#3DC23F';
+export const COLOR_CHART_LINE_LEFT = '#F34C44';

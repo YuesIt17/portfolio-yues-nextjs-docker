@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChartLine test Check render ChartLine component 1`] = `
+<polyline
+  className="css-1nfezsp-line"
+  points="1,1 2,2"
+/>
+`;

@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TelegramChart test Check render TelegramChart component 1`] = `
+<div
+  className="css-1km59tu-chart"
+  data-testid="telegramChart"
+>
+  <svg
+    style={
+      Object {
+        "width": undefined,
+      }
+    }
+    viewBox="0 0 41 67"
+  >
+    <g>
+      <polyline
+        className="css-1ied4zn-line"
+        points="0,37 11,37"
+      />
+      <text
+        className="css-1nvft8-label"
+        x={1}
+        y={61}
+      >
+        Nov 17
+      </text>
+    </g>
+    <g>
+      <polyline
+        className="css-1ied4zn-line"
+        points="0,0 0,37"
+      />
+      <g>
+        <text
+          className="css-1nvft8-label"
+          x={0}
+          y={11}
+        >
+          60
+        </text>
+        <polyline
+          className="css-1ied4zn-line"
+          points="0,23 11,23"
+        />
+      </g>
+    </g>
+  </svg>
+  <div
+    className="css-187vt5f-chartMap"
+    data-testid="telegramChartMap"
+  >
+    <svg
+      style={
+        Object {
+          "width": undefined,
+        }
+      }
+      viewBox="0 0 11 7"
+    />
+  </div>
+  <div
+    className="css-1weht41-footer"
+  >
+    <button
+      className="css-mrh4cr-button"
+      data-testid="name_1"
+      onClick={[Function]}
+    >
+      <div
+        className="css-6o636l-icon"
+      >
+        <svg
+          fill="transparent"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            fill="transparent"
+            r="11"
+            stroke="#F34C44"
+            strokeWidth={2}
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+          />
+        </svg>
+      </div>
+      <div
+        className="css-u4zqfx-label"
+      >
+        name_1
+      </div>
+    </button>
+  </div>
+</div>
+`;
