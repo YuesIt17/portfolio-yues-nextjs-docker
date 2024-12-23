@@ -60,10 +60,10 @@ Need to implement UI testing in a project using Cypress.
 
 - Run using command `yarn deploy`
 
-## Settings of Docker
+## Settings of Docker image for frontend
 
 - add Dockerfile and file of nginx (conf.d)
-- build image of app with commmand: docker build -t yuesit17/yuit_chart --target normal -f infra/docker/Dockerfile .
+- build image of app with commmand: docker build -t yuit-chart-frontend-image --target normal -f infra/docker/Dockerfile .
 - check image via command: docker images
 - run container of app: docker run -p 127.0.0.1:3000:8080/tcp yuit_chart
 - check container via: docker ps
@@ -73,13 +73,13 @@ Need to implement UI testing in a project using Cypress.
 - for remove image: docker rmi IMAGE ID
 - for push to hub.docker.com:
   - in the Docker Desktop GUI and select the Sign in OR via command: docker login
-  - docker push YOUR_DOCKER_USERNAME/IMAGE_NAME, e.g. docker push yuesit17/yuit_chart
+  - docker push YOUR_DOCKER_USERNAME/IMAGE_NAME, e.g. docker push yuit-chart-frontend-image
 
 ## Deploy app to vm with docker image
 
 1. Connect to vm:
 
-- ssh -i c:\Users\some.user\.ssh\id_ed25519 evgeny-work@<VM_PUBLIC_IP> (e.g. evgeny-work@51.250.46.87)
+- ssh -i c:\Users\some.user\.ssh\id_ed25519 evgeny-work@<VM_PUBLIC_IP>
 
 2. Set up Docker's apt repository:
 
@@ -114,11 +114,14 @@ Need to implement UI testing in a project using Cypress.
 - check container: sudo docker ls
 - go to app: http://<VM_PUBLIC_IP>:3000 (e.g. http://51.250.46.87:3000/)
 
-## Settings of docker network
 
-- create network: docker network create -d bridge yuit-net
+## Settings of docker container for frontend with network
+
+- create network (if not create for backend): docker network create -d bridge yuit-net
 - check network: docker network ls
-- run container: docker run --network=yuit-net --name yuit-chart-frontend --rm -itd -p 127.0.0.1:3000:8080/tcp yuesit17/yuit_chart
+- build image of app with commmand: docker build -t yuit-chart-frontend-image --target normal -f infra/docker/Dockerfile .
+- check image via command: docker images
+- run container: docker run --network=yuit-net --name yuit-chart-frontend --rm -itd -p 127.0.0.1:3000:8080/tcp yuit-chart-frontend-image
 - docker exec -it yuit-chart-frontend sh -c 'ping yuit-chart-db'
 - check container with network: docker inspect
 - force remove all container by id with volumes associate: docker rm -fv $(docker ps -aq)
