@@ -3,6 +3,11 @@
   <h3>Auto formatted with Prettier, tested with Jest + Testing-library + Redux-saga-test-plan</h3>
 </div>
 
+![Tech logos](https://github.com/YuesIt17/portfolio-yues-nextjs-docker/blob/main/public/project_tech.jpg)
+
+
+![Project_example](https://raw.githubusercontent.com/YuesIt17/portfolio-yues-nextjs-docker/refs/heads/main/public/yuit-chart-frontend.gif)
+
 ## What is this and why is it 🤔
 
 - The topic was taken from telegram contest https://t.me/contest/7
